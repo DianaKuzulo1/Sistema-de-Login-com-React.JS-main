@@ -4,38 +4,28 @@ import useAuth from "../hooks/useAuth";
 import Home from "../pages/Home";
 import Signin from "../pages/Signin";
 import Signup from "../pages/Signup";
+import Apresentacao from "../pages/Apresentacao"
 
 const Private = ({ Item }) => {
-    const { signed } = useAuth();
+  const { signed } = useAuth();
 
-    return signed > 0 ? < Item / > : < Signin / > ;
+  return signed > 0 ? <Item /> : <Signin />;
 };
 
 const RoutesApp = () => {
-        return ( <
-            BrowserRouter >
-            <
-            Fragment >
-            <
-            Routes >
-            <
-            Route exact path = "/home"
-            element = { < Private Item = { Home }
-                />} / >
-                <
-                Route path = "/"
-                element = { < Signin / > }
-                /> <
-                Route exact path = "/signup"
-                element = { < Signup / > }
-                /> <
-                Route path = "*"
-                element = { < Signin / > }
-                /> < /
-                Routes > <
-                /Fragment> < /
-                BrowserRouter >
-            );
-        };
+  return (
+    <BrowserRouter>
+      <Fragment>
+        <Routes>
+          <Route exact path="/home" element={<Private Item={Home} />} />
+          <Route path="/" element={<Signin />} />
+          <Route exact path="/signup" element={<Signup />} />
+          <Route path="*" element={<Signin />} />
+          <Route exact path="/apresentacao" element={<Apresentacao />} />
+        </Routes>
+      </Fragment>
+    </BrowserRouter>
+  );
+};
 
-        export default RoutesApp;
+export default RoutesApp;

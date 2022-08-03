@@ -7,14 +7,13 @@ import { Button } from 'reactstrap';
 
 
 const apresentacao = () => {
+  
+    return (
+    <C.Container>
+     
 
-    return ( <
-        C.Container >
-
-
-        <
-        /C.Container>
-    );
+    </C.Container>
+  );
 };
 
 export default apresentacao;
