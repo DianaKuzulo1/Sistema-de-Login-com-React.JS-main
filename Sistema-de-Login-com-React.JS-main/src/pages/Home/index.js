@@ -21,8 +21,8 @@ const Home = () => {
         <
         div class = "page-header" >
         <
-        h1 > Minha Agenda < /h1> <
-        /div>
+        h1 > Minha Agenda < /h1> < /
+        div >
 
         <
         div class = "row" >
@@ -69,8 +69,8 @@ const Home = () => {
         id = "nomeEvento"
         class = "form-control" >
         <
-        /input> <
-        /div>
+        /input> < /
+        div >
 
 
         <
@@ -84,8 +84,8 @@ const Home = () => {
         id = "datainicio"
         class = "form-control" >
         <
-        /input> <
-        /div>
+        /input> < /
+        div >
 
         <
         div class = "form-group" >
@@ -98,8 +98,8 @@ const Home = () => {
         id = "dataterminoo"
         class = "form-control" >
         <
-        /input> <
-        /div> <
+        /input> < /
+        div > <
         br / >
 
         <
@@ -185,8 +185,8 @@ const Home = () => {
         /div>
 
         <
-        /body> <
-        /C.Container>
+        /body> < /
+        C.Container >
     );
 };
 
