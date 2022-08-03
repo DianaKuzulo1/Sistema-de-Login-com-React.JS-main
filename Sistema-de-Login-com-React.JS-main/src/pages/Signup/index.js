@@ -42,46 +42,63 @@ const Signup = () => {
     return ( <
         C.Container >
         <
-        C.Label > SISTEMA DE LOGIN < /C.Label> <
-        C.Content >
+        div class = "page-header" >
         <
-        Input type = "email"
-        placeholder = "Digite seu E-mail"
-        value = { email }
-        onChange = {
-            (e) => [setEmail(e.target.value), setError("")] }
-        /> <
-        Input type = "email"
-        placeholder = "Confirme seu E-mail"
-        value = { emailConf }
-        onChange = {
-            (e) => [setEmailConf(e.target.value), setError("")] }
-        /> <
-        Input type = "password"
-        placeholder = "Digite sua Senha"
-        value = { senha }
-        onChange = {
-            (e) => [setSenha(e.target.value), setError("")] }
-        />
+        h1 > Area de Cadastramento do Usuario < /h1> <
+            /div> <
+            C.Content >
+            <
+            div class = "form-group" >
+            <
+            label
+        for = "nome" >
+        Nome do Usuario < /label> <
+            input type = "text"
+        name = "nome"
+        id = "nome"
+        class = "form-control" / >
+        <
+        /div>
+
 
         <
-        Button Text = "Cadastrar Reuniao"
-        onClick = { relocate_casa }
-        />
+        div class = "form-group" >
+        <
+        label
+        for = "email" > E - mail < /label > <
+        input type = "email"
+        name = "email"
+        id = "email"
+        class = "form-control"
+        placeholder = "Digite o email do novo Usuario" / >
+        <
+        /div>
+
+
+        <
+        div class = "form-group" >
+        <
+        label
+        for = "email" > Password < /label > <
+        input type = "password"
+        placeholder = "Digite sua Senha"
+        value = { senha }
+        class = "form-control"
+        onChange = {
+            (e) => [setSenha(e.target.value), setError("")] }
+        /> <
+        /div>
+
+
+
 
         <
         C.labelError > { error } < /C.labelError> <
-        Button Text = "Inscrever-se"
+        Button Text = "Cadastrar Usuario"
         onClick = { handleSignup }
-        /> <
-        C.LabelSignin >
-        Já tem uma conta ?
+        />
+
         <
-        C.Strong >
-        <
-        Link to = "/" > & nbsp; Entre < /Link> <
-        /C.Strong> <
-        /C.LabelSignin> <
         /C.Content> <
         /C.Container>
     );

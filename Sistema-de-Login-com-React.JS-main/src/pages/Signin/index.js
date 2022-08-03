@@ -4,7 +4,7 @@ import * as C from "./styles";
 import { Link, useNavigate } from "react-router-dom";
 import useAuth from "../../hooks/useAuth";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Button } from 'reactstrap';
+import Button from "../../components/Button";
 
 const Signin = () => {
     const { signin } = useAuth();
@@ -47,10 +47,7 @@ const Signin = () => {
         onChange = {
             (e) => [setSenha(e.target.value), setError("")] }
         /> <
-        C.labelError > { error } < /C.labelError>
-
-        <
-        /C.Content> <
+        C.labelError > { error } < /C.labelError> <
         div >
         <
         Button Text = "Entrar"
@@ -58,8 +55,8 @@ const Signin = () => {
         onClick = { handleLogin }
         /> <
         /div> <
+        /C.Content> <
         /C.Container>
-
     );
 };
 

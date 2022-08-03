@@ -77,11 +77,11 @@ const Home = () => {
         div class = "form-group" >
         <
         label
-        for = "horainicio"
-        class = "form-label" > Hora de inicio < /label> <
-        input type = "time"
-        name = "horainicio"
-        id = "horainicio"
+        for = "datainicio"
+        class = "form-label" > Data Inicio < /label> <
+        input type = "datetime-local"
+        name = "datainicio"
+        id = "datainicio"
         class = "form-control" >
         <
         /input> <
@@ -91,11 +91,11 @@ const Home = () => {
         div class = "form-group" >
         <
         label
-        for = "horatermino"
-        class = "form-label" > Hora de Termino < /label> <
-        input type = "time"
-        name = "horatermino"
-        id = "horaterminoo"
+        for = "datatermino"
+        class = "form-label" > Data de Termino < /label> <
+        input type = "datetime-local"
+        name = "datatermino"
+        id = "dataterminoo"
         class = "form-control" >
         <
         /input> <
