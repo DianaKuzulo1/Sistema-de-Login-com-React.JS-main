@@ -52,7 +52,5 @@ export const Strong = styled.strong `
     text-decoration: none;
     color: #676767;
   }
-
-  
   
 `;

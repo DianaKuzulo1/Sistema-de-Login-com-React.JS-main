@@ -5,6 +5,10 @@ import Home from "../pages/Home";
 import Signin from "../pages/Signin";
 import Signup from "../pages/Signup";
 import Apresentacao from "../pages/Apresentacao"
+import Alterar from "../pages/Alterar"
+import Visualizar from "../pages/Visualizar Reuniões"
+import Validar from "../pages/Validar";
+
 
 const Private = ({ Item }) => {
   const { signed } = useAuth();
@@ -22,6 +26,11 @@ const RoutesApp = () => {
           <Route exact path="/signup" element={<Signup />} />
           <Route path="*" element={<Signin />} />
           <Route exact path="/apresentacao" element={<Apresentacao />} />
+          <Route exact path="/pass" element={<Alterar/>} />
+          <Route exact path="/visualizar"element={<Visualizar/>} />
+          <Route exact path="/validar"element={<Validar/>} />
+          
+
         </Routes>
       </Fragment>
     </BrowserRouter>

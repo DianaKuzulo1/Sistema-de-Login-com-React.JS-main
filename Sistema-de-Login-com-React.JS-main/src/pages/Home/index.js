@@ -23,7 +23,7 @@ const Home = () => {
       <div class="row">
         <div class="col-sm-8">
           <h3>Cadastra Reuniao</h3>
-          <form>
+          <form >
 
             <div class="form-group">
               <label for="temadareuniao">Tema da Reunião</label>
@@ -117,17 +117,17 @@ const Home = () => {
 </select>
 </lagend>
 
-
+<br/>
 
 <lagend>
- <select name="uf" id="uf">
+ <select name="uf" id="uf" >
 <option value="">Selecione o Edificio</option>
 	<option value="AC">Cabinda</option>
 	<option value="AL">Kuanza-Sul</option>
 </select>
 </lagend>
 
-<br/>
+
 
 
 

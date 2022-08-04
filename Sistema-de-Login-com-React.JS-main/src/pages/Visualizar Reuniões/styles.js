@@ -11,6 +11,12 @@ margin-left: auto;
 select{
   color:#fc0fc0
 }
+img{
+  width: 100px;
+  height:100px;
+  }
+
+
 
 `;
 
