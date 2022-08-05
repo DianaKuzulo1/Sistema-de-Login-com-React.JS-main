@@ -8,6 +8,7 @@ import useAuth from "../../hooks/useAuth";
 const Signin = () => {
   const { signin } = useAuth();
   const navigate = useNavigate();
+  
 
   const [email, setEmail] = useState("");
   const [senha, setSenha] = useState("");
@@ -26,7 +27,7 @@ const Signin = () => {
       return;
     }
 
-    navigate("/apresentacao");
+    navigate("/loginDados");
   };
 
   return (
@@ -49,10 +50,12 @@ const Signin = () => {
           onChange={(e) => [setSenha(e.target.value), setError("")]}
         />
         <C.labelError>{error}</C.labelError>
-        <Button Text="Entrar" onClick={handleLogin} />
+        <Button Text="Entrar" type="submit"/>
       </C.Content>
     </C.Container>
   );
 };
 
 export default Signin;
+
+// onClick={handleLogin}
